@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Disable the rule preventing React import
+    "react/jsx-uses-react": "off", // Disable the rule preventing the use of React in JSX
+    "react/jsx-uses-vars": "error" // Enable the rule to ensure variables are used
+  }
 }
